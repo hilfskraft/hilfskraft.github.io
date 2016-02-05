@@ -1693,22 +1693,22 @@ h6 {
 
 @media screen and (max-width: 736px) {
     h1 {
-        font-size: 2em;
+        font-size: 3.5em;
     }
     h2 {
-        font-size: 1.25em;
+        font-size: 2em;
     }
     h3 {
-        font-size: 1em;
+        font-size: 1.5em;
     }
     h4 {
-        font-size: 0.8em;
+        font-size: 1.2em;
     }
     h5 {
-        font-size: 0.6em;
+        font-size: 1em;
     }
     h6 {
-        font-size: 0.6em;
+        font-size: 0.8em;
     }
 }
 
@@ -3071,7 +3071,49 @@ body.is-loading .spotlights > section > .content > .inner {
         min-height: 15em;
     }
     .spotlights > section > .content {
-        padding: 3em 2em 1em 2em;
+        padding: 0em 2em 1em 2em;
+    }
+    .spotlights > section > .content > .inner h2{
+        text-align: center;
+    }
+    .spotlights > section > .content > .inner p{
+        font-size: 1.3em;
+        text-align: center;
+        margin: 0 0 1.5em 0;
+    }
+    .wrapper > .inner h2{
+        text-align: center;
+    }
+    .features section{
+        text-align: center;   
+    }
+    .features section .icon{
+        margin: 0px auto;
+        margin-bottom: 0.5rem;
+    }
+    .features section h3{
+        margin-bottom: 0px;
+    }
+    .features section p{
+        font-size: 1.3em;
+        line-height: 1.3em;
+        margin-bottom: 0.5em;
+    }
+    .features section{
+        padding-bottom: 2em;   
+    }
+    .contact{
+        text-align: center;
+    }
+    ul.contact > li span,ul.contact > li a{
+        font-size: 1.3em;
+    }
+    ul.contact > li .icons a{
+        font-size: 3em;   
+    }
+    #footer > .inner .menu{
+        text-align: center;
+        margin-bottom: 0.5em;
     }
 }
 
@@ -3176,7 +3218,7 @@ table.alt tfoot {
 
 @media screen and (max-width: 736px) {
     .wrapper > .inner {
-        padding: 3em 2em 1em 2em;
+        padding: 1.5em 2em 1em 2em;
     }
 }
 
@@ -3455,7 +3497,7 @@ body.is-loading .wrapper.fade > .inner {
 #sidebar {
     padding: 2.5em 2.5em 0.5em 2.5em;
     /*background: #312450;*/
-    background: #333399;
+    background: #3399ff;
     cursor: default;
     height: 100vh;
     left: 0;
@@ -3797,12 +3839,13 @@ body.is-loading #sidebar nav ul li {
 
 #intro {
     background-attachment: fixed;
-    background-image: url("images/bg10.jpg");
+    background-image: url("images/bg.jpg");
     background-position: top right;
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
     color: white;
     font-weight: 100;
+    height: 100vh;
 }
 
 #intro p {
@@ -3818,8 +3861,24 @@ body.is-loading #sidebar nav ul li {
 }
 
 @media screen and (max-width: 736px) {
+    #intro h1 {
+        text-align: center;
+    }
     #intro p {
+        font-size: 1.5em;
+        width: 100%;
+        text-align: center;
+    }
+    .button {
         font-size: 1em;
+        height: calc(4em + 2px);
+        line-height: 4em;
+    }
+    .spotlights > section > img{
+        margin: 35px auto;
+    }
+    .spotlights > section{
+        padding-top: 10px;
     }
 }
 
