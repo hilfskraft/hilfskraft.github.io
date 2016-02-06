@@ -138,21 +138,23 @@
                 <!-- <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>-->
                 <div class="split style1">
                     <section>
-                        <form method="post" action="#">
+                        <form id="formspree" action="//formspree.io/hilfskraft.1800@gmail.com" method="POST">
+                          <input type="hidden" name="_next" value="http://hilfskraft.github.io/thanks.html">
                             <div class="field half first">
                                 <label for="name">Name</label>
-                                <input type="text" name="name" id="name" />
+                                <input type="text" name="name" placeholder="Your name" />
                             </div>
                             <div class="field half">
                                 <label for="email">Email</label>
-                                <input type="text" name="email" id="email" />
+                                <input type="email" name="_replyto" placeholder="Your Email" />
                             </div>
                             <div class="field">
                                 <label for="message">Message</label>
-                                <textarea name="message" id="message" rows="5"></textarea>
+                                <textarea name="message" rows="5"></textarea>
                             </div>
                             <ul class="actions">
-                                <li><a href="" class="button submit">Send Message</a></li>
+                                <input type="submit" value="Send Message">
+                                <!-- <li><a href="" class="button submit">Send Message</a></li>-->
                             </ul>
                         </form>
                     </section>
@@ -194,7 +196,7 @@
     <footer id="footer" class="wrapper style1-alt">
         <div class="inner">
             <ul class="menu">
-                <li> Hilfskraft. All rights reserved.</li> Template: <a href="http://html5up.net"> html5up
+                <li> we ❤ open source | Powered by: Hilfskraft | </li> Template: <a href="http://html5up.net"> html5up
 						<li>Icons by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>
             </ul>
         </div>
@@ -208,6 +210,10 @@
     <script src="assets/js/util.js"></script>
     <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
     <script src="assets/js/main.js"></script>
+    <script>
+    var contactform =  document.getElementById('contactform');
+    contactform.setAttribute('action', '//formspree.io/' + 'your' + '@' + 'email' + '.' + 'com');
+    </script>
 
 </body>
 
